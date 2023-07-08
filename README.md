@@ -7,6 +7,10 @@ This project employs the Detectron2 library and the Mask R-CNN model to simultan
 # Dataset
 The [BodyHands dataset](http://vision.cs.stonybrook.edu/~supreeth/BodyHands/BodyHands.zip) was used in this project. This dataset consists of unconstrained images where the locations of hands and corresponding bodies are annotated. You can download it from [here](http://vision.cs.stonybrook.edu/~supreeth/BodyHands/BodyHands.zip).
 
+In the above you can see an annotated image taken from the BodyHands dataset. The image distinctly illustrates that only one human body has been labeled. The reason behind this is that, within the parameters of this dataset, a body is only labeled if it includes an associated hand class. Thus, even if multiple bodies are present in the image, those without associated hand classes remain unlabeled.
+
+![Example Image](example.png)
+
 # Results
 The model was evaluated against a dataset that consisted of 5983 instances of the hand class and 4341 instances of the body class. Upon evaluation, the model achieved an Average Precision (AP) score of 81.22 for the hand class.
 
