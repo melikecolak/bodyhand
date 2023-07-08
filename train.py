@@ -5,6 +5,7 @@ Created on Tue May 1 00:28:15 2023
 
 @author: melike.colak
 """
+"This development was implemented from the paper "Whose Hands Are These? Hand Detection and Hand-Body Association in the Wild"."
 
 import torch
 torch.__version__
@@ -46,7 +47,6 @@ CLASS_NAMES = ("hand", "body",)
 import os
 import pandas as pd
 
-# Klasör yollarını belirtin
 jpeg_dir = './BodyHands/Data/VOC2007/JPEGImages'
 anno_dir = './BodyHands/Data/VOC2007/Annotations'
 
